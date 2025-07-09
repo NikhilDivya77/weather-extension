@@ -1,0 +1,120 @@
+/* Full body setup */
+body {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 400px;
+  background: url("https://images.unsplash.com/photo-1501973801540-537f08ccae7b") no-repeat center center/cover;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+/* Center the container in the middle */
+html {
+  margin: 0;
+  padding: 0;
+  /* width: 300px;
+  height: 400px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Centered container card */
+.container {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent */
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading */
+h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+/* Button style */
+button {
+  padding: 10px 15px;
+  margin: 15px 0;
+  background-color: #00c6ff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0096c7;
+}
+
+/* Weather display */
+#weatherInfo {
+  margin-top: 10px;
+}
+
+#weatherIcon {
+  width: 70px;
+  margin: 10px auto;
+}
+
+/* Error */
+.error {
+  color: #ffcccc;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+/* Toggle Switch */
+.switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 34px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+.label-text {
+  font-size: 14px;
+}

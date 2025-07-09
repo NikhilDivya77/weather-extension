@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Weather Checker",
+  "version": "1.0",
+  "description": "Get current weather from your location",
+  "permissions": ["geolocation"],
+  "host_permissions": [
+    "https://api.openweathermap.org/"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon.png"
+    }
+  }
+}
