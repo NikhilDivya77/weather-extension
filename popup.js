@@ -1,4 +1,4 @@
-const API_KEY = "eb9fd962dae9285b60b419c827c10c76"; // Replace with your OpenWeatherMap API key
+const API_KEY = "eb9fd962dae9285b60b419c827c10c76"; 
 
 const getWeatherBtn = document.getElementById("getWeather");
 const unitToggle = document.getElementById("unitToggle");
@@ -8,7 +8,7 @@ const errorDiv = document.getElementById("error");
 
 let unit = localStorage.getItem("unit") || "metric"; // default to Celsius
 
-// Initialize toggle position
+
 unitToggle.checked = unit === "imperial";
 
 unitToggle.addEventListener("change", () => {
